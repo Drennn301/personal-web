@@ -25,7 +25,7 @@ module.exports = {
         myRed100:`#E3242B`,
         myRed200:`#D0312D`,
         myRed300:`#D21404`,
-        myRed400:`rgb(255 0 0)`,
+        myRed400:`#bf0202`,
         crimson100:`#B90E0A`,
         crimson200:`#A91B0D`,
         crimson300:`#900603`,
