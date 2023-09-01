@@ -4,7 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+
+    /* New CSS Custom Classes */
     .btn-black-red {
       @apply bg-black hover:bg-crimson100 text-white font-bold py-2 px-3 rounded-lg
       duration-300;
@@ -14,4 +15,19 @@
       @apply bg-myRed400 hover:bg-red-900 text-white font-bold py-2 px-3 rounded-lg
       duration-300;
     }
+
+
+
+    /* Burger Toggle */
+
+    .burger-line {
+      @apply w-[30px] h-1 my-1 block bg-black mr-4 mb-2;
+    }
+
+  .burger-active > span:nth-child(1){
+      @apply origin-top-left rotate-45 -translate-y-2;
   }
+
+  .burger-active > span:nth-child(2){
+    @apply  origin-bottom-left -rotate-45 ;
+}
