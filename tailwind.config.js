@@ -18,6 +18,7 @@ module.exports = {
         outfit : [`Outfit`],
         ptSans :[`PT Sans`],
         roboto : [`Roboto`],
+        heebo : [`Heebo`],
       },
 
       // To add some Custom Colors
