@@ -23,6 +23,7 @@ module.exports = {
 
       // To add some Custom Colors
       colors : {
+        myRed150:`#ff0000`,
         myRed100:`#E3242B`,
         myRed200:`#D0312D`,
         myRed300:`#D21404`,

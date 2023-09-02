@@ -11,92 +11,101 @@
 <!-- ★★★ HEADER SECTION ★★★ -->
 
     <!--  ★★ HEADER Section Start ★★ -->
+    <!-- UNTUK EKSPERIMEN -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
 
-        <div class="container">
-            <div class="flex items-center justify-between relative ">
-
+        <div class="container mx-auto">
+            <div class="flex justify-between relative ">
+    
                 <!-- ★★★ Logo & Name / LEFT SIDE ★★★-->
-                <div class="px-4">
-                    <a href="#" class="py-3 font-bold font-roboto text-3xl text-gray-700 block flex">
-                       <img class="h-auto w-13 mr-1 -mt-2" src="../src/assets/images/icon.png" alt="logo">
+                <div class="pl-4 items-center  ">
+                    <a href="#" class="py-3 font-bold font-roboto flex">
+                       <img class="h-auto w-13 mr-1 mt-0.5 " src="../src/assets/images/icon.png" alt="logo">
                         <span class="font-heebo font-bold
+                        text-2xl text-gray-900 mt-3 
                         hover:text-crimson100 duration-200"> Dren Pradana</span>
                         
                     </a>
                 </div>          
                 
-                <!-- ★★★ Logo & Name / LEFT SIDE ★★★-->
-                <div class="flex items-center">
-                    <button class="block absolute right-4"
+                <!-- ★★★ BURGER MENU ★★★-->
+                <div class="pr-10 flex items-center ">
+                    <button class="block absolute right-4 mt-1 lg:hidden"
                     id="burger" name="burger" type="button">
                         <span class="burger-line duration-300 ease-in-out"></span>
                         <span class="burger-line duration-300 ease-in-out "></span>
                     </button>
-
+    
                     <!-- ★★★ RIGHT SIDE / NAVBAR SECTION ★★★ -->
-                        <nav id="nav-menu" class="hidden absolute py-5 bg-white w-full h-screen right-0.5 top-full">
-                            <ul class="block">
+                        <nav id="nav-menu" class="hidden absolute py-5 bg-white w-full h-screen right-0.5 top-full 
+                        lg:static lg:bg-transparent lg:max-w-full lg:block lg:h-full
+                        ">
+                            <ul class="block lg:flex">
                                 <!-- Home -->
                                 <li class="group">
                                     <a href="#home" class="text-xl flex py-2 mx-8 text-gray-600
                                     font-heebo font-bold tracking-wide
-                                   group-hover:text-crimson100" >Home</a> 
+                                    lg:text-base xl:text-xl
+                                    group-hover:text-crimson100" >Home</a> 
                                 </li>
-
+    
                                 <!-- Projects -->
                                 <li class="group">
                                     <a href="#projects" class="text-xl flex py-2 mx-8 text-gray-600
+                                    lg:text-base xl:text-xl
                                     font-heebo font-bold tracking-wide
                                     group-hover:text-crimson100" >Projects</a> 
                                  </li>
-
+    
                                  <!-- Arts -->
                                  <li class="group">
                                     <a href="#arts" class="text-xl flex py-2 mx-8 text-gray-600
+                                    lg:text-base xl:text-xl
                                     font-heebo font-bold tracking-wide
                                     group-hover:text-crimson100" >Arts</a> 
                                  </li>
-
+    
                                  <!-- Blogs -->
                                  <li class="group">
                                     <a href="#blog" class="text-xl flex py-2 mx-8 text-gray-600
+                                    lg:text-base xl:text-xl
                                     font-heebo font-bold tracking-wide
                                     group-hover:text-crimson100" >Blog</a> 
                                  </li>
-
+    
                                  <!-- Contacts -->
                                  <li class="group">
                                     <a href="#contact" class="text-xl flex py-2 mx-8 mb-2 text-gray-600
+                                    lg:text-base xl:text-xl
                                     font-heebo font-bold tracking-wide
                                     group-hover:text-crimson100" >Contact</a> 
                                  </li>
-
+    
                                  <!-- Github -->
                                  <li class="group">
-                                   <a href="#github"class="flex">
-                                    <svg class="ml-8 mt-[8px] text-gray-600 group-hover:text-crimson100" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
+                                   <a href="#github"class="flex md:hidden lg:flex">
+                                    <svg class="ml-8 mr-8 mt-[8px] text-gray-600 group-hover:text-crimson100" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
                                         <g transform="translate(-56.32,-56.32) scale(1.44,1.44)"><g fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(4,4)"><path d="M32,10c-12.15,0 -22,9.85 -22,22c0,12.15 9.85,22 22,22c12.15,0 22,-9.85 22,-22c0,-12.15 -9.85,-22 -22,-22zM32,14c9.941,0 18,8.059 18,18c0,8.23871 -5.54128,15.16934 -13.0957,17.30664c-0.0928,-0.19124 -0.15645,-0.40072 -0.15039,-0.63867c0.031,-1.209 0,-4.03041 0,-5.06641c0,-1.778 -1.125,-3.03906 -1.125,-3.03906c0,0 8.82422,0.09959 8.82422,-9.31641c0,-3.633 -1.89844,-5.52539 -1.89844,-5.52539c0,0 0.9973,-3.87844 -0.3457,-5.52344c-1.505,-0.163 -4.20056,1.43755 -5.35156,2.18555c0,0 -1.82342,-0.74805 -4.85742,-0.74805c-3.034,0 -4.85742,0.74805 -4.85742,0.74805c-1.151,-0.748 -3.84656,-2.34755 -5.35156,-2.18555c-1.342,1.645 -0.3457,5.52344 -0.3457,5.52344c0,0 -1.89844,1.89044 -1.89844,5.52344c0,9.416 8.82422,9.31836 8.82422,9.31836c0,0 -1.00476,1.14381 -1.10547,2.7832c-0.58969,0.20793 -1.39349,0.45313 -2.16016,0.45313c-1.85,0 -3.25548,-1.79691 -3.77148,-2.62891c-0.508,-0.821 -1.54948,-1.50977 -2.52148,-1.50977c-0.64,0 -0.95312,0.3215 -0.95312,0.6875c0,0.366 0.89823,0.62083 1.49023,1.29883c1.248,1.43 1.22488,4.64648 5.67188,4.64648c0.5258,0 1.47056,-0.1211 2.22461,-0.22461c-0.00417,1.00955 -0.0159,1.97778 0,2.59766c0.00586,0.23869 -0.05897,0.44894 -0.15234,0.64063c-7.55349,-2.1379 -13.09375,-9.0686 -13.09375,-17.30664c0,-9.941 8.059,-18 18,-18z"></path></g></g></g>
                                         </svg>
-                                    <span class="text-xl flex mx-5 py-2 mb-2 text-gray-600
+                                    <span class="text-xl flex -ml-3 py-2 mb-2 text-gray-600
                                     font-heebo font-bold tracking-wide
-                                    group-hover:text-crimson100">Github</span>
+                                    group-hover:text-crimson100 md:hidden">Github</span>
                                    </a>
                                  </li>
-
+    
                                  <!-- COMMENTED FOR TEMPORARY -->
                                   <!-- Instagram 
                                   <li class="group">
                                     <a href="#instagram"class="flex">
                                         <svg class="ml-[33px] mt-[8px] text-gray-600 group-hover:text-crimson100" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
-                                            <g transform="translate(-46.08,-46.08) scale(1.36,1.36)"><g fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8,8)"><path d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z"></path></g></g></g>
+                                            <g transform="translate(-46.08,-46.08) scale(1.36,1.36)"><g fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8,8)"><path d="M11.46875,5c-3.55078,0 -8.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z"></path></g></g></g>
                                             </svg>
                                      <span class="text-xl flex mx-5 py-2 mb-2 text-gray-600
                                      font-heebo font-bold tracking-wide
                                      group-hover:text-crimson100">Instagram</span>
                                     </a>
                                   </li>
-
+    
                                   <!-- Twitter 
                                   <li class="group">
                                     <a href="#twitter"class="flex">
@@ -109,21 +118,21 @@
                                     </a>
                                   </li>
                                    COMMENTED FOR TEMPORARY -->
-
+    
                                   <!-- LinkedIn -->
                                   <li class="group">
-                                    <a href="#linkedin"class="flex">
-                                        <svg class="ml-[33px] mt-[8px] text-gray-600 group-hover:text-crimson100" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
+                                    <a href="#linkedin"class="flex md:hidden lg:flex">
+                                        <svg class="ml-[33px] mr-8 mt-[8px] text-gray-600 group-hover:text-crimson100" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
                                             <g transform="translate(-52.48,-52.48) scale(1.41,1.41)"><g fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8,8)"><path d="M7.5,5c-1.36719,0 -2.5,1.13281 -2.5,2.5v17c0,1.36719 1.13281,2.5 2.5,2.5h17c1.36719,0 2.5,-1.13281 2.5,-2.5v-17c0,-1.36719 -1.13281,-2.5 -2.5,-2.5zM7.5,7h17c0.28516,0 0.5,0.21484 0.5,0.5v17c0,0.28516 -0.21484,0.5 -0.5,0.5h-17c-0.28516,0 -0.5,-0.21484 -0.5,-0.5v-17c0,-0.28516 0.21484,-0.5 0.5,-0.5zM10.4375,8.71875c-0.94922,0 -1.71875,0.76953 -1.71875,1.71875c0,0.94922 0.76953,1.71875 1.71875,1.71875c0.94922,0 1.71875,-0.76953 1.71875,-1.71875c0,-0.94922 -0.76953,-1.71875 -1.71875,-1.71875zM19.46875,13.28125c-1.43359,0 -2.38672,0.78516 -2.78125,1.53125h-0.0625v-1.3125h-2.8125v9.5h2.9375v-4.6875c0,-1.23828 0.24609,-2.4375 1.78125,-2.4375c1.51172,0 1.53125,1.39844 1.53125,2.5v4.625h2.9375v-5.21875c0,-2.55469 -0.54297,-4.5 -3.53125,-4.5zM9,13.5v9.5h2.96875v-9.5z"></path></g></g></g>
                                             </svg>
-                                     <span class="text-xl flex mx-5 py-2 mb-2 text-gray-600
+                                     <span class="text-xl flex -ml-3 py-2 mb-2 text-gray-600
                                      font-heebo font-bold tracking-wide
-                                     group-hover:text-crimson100">LinkedIn</span>
+                                     group-hover:text-crimson100 md:hidden">LinkedIn</span>
                                     </a>
                                   </li>
-
+    
                                   <!-- Dev To -->
-                                  <li class="group">
+                                  <li class="group md:hidden">
                                     <a href="#devto"class="flex">
                                         <svg class="ml-[31px] mt-[8px] text-gray-600 group-hover:text-crimson100" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
                                             <g transform="translate(-19.2,-19.2) scale(1.15,1.15)"><g fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8,8)"><path d="M2,7v18h28v-18zM4,9h24v14h-24zM6,11v10h3c1.654,0 3,-1.346 3,-3v-4c0,-1.654 -1.346,-3 -3,-3zM16,11c-1.103,0 -2,0.897 -2,2v6c0,1.103 0.897,2 2,2h2v-2h-2v-2h2v-2h-2v-2h2v-2zM19.69141,11l2.08398,9.02539c0.132,0.57 0.63961,0.97461 1.22461,0.97461c0.585,0 1.09261,-0.40461 1.22461,-0.97461l2.08398,-9.02539h-2.05273l-1.25586,5.43945l-1.25586,-5.43945zM8,13h1c0.552,0 1,0.448 1,1v4c0,0.552 -0.448,1 -1,1h-1z"></path></g></g></g>
@@ -133,19 +142,22 @@
                                      group-hover:text-crimson100">Dev.To</span>
                                     </a>
                                   </li>
-
+    
                             </ul>
                         </nav>
                     
                 </div>
-
-
+    
+    
             </div>
         </div>
+    
+    
+    </header> 
+   
 
-
-    </header>
     <!--  ★★ HEADER Section END ★★ -->
+   
 
 
 <!-- ★★★ HERO SECTION ★★★ -->
@@ -162,7 +174,8 @@
                 md:text-[120px] 
                 lg:text-[150px]">
                     Hi I'm
-                    <span class="bg-gradient-to-br font-bold from-myRed100 via-red-600 to-crimson100 text-transparent bg-clip-text cursor-pointer hover:text-myRed400  duration-500">
+                    <span class="bg-gradient-to-br font-bold from-myRed100 via-red-700 to-crimson100
+                    text-transparent bg-clip-text cursor-pointer hover:text-myRed150  duration-500">
                         Dren
                     </span>
                 </h1>
@@ -176,7 +189,7 @@
                 lg:text-4xl lg:max-w-4xl lg:text-justify lg:mx-auto">
                     I'm a <span class="text-red-600 font-semibold">Web Developer</span> with a solid foundation and a hunger for growth, Ready to meet and collaborate with those who seeking innovative solutions, 
                     I am 
-                    <span class="bg-gradient-to-bl text-red-600 font-bold">
+                    <span class="text-red-600 font-bold">
                     Happy</span> 
                     to contribute and make a positive impact right from the start.
                 </h2>
@@ -258,14 +271,18 @@
 
 
 <!-- RANDOM SECTION TO FILL -->
+
+
+
+
 <div>
 <hr class="mt-56">
 <h1>RANDOM TEXT</h1>
-<h1 class="text-5xl ">TEST FONT</h1>
 <h1 class="text-5xl font-heebo font-extrabold">TEST FONT</h1>
+<h1 class="text-5xl font-heebo font-bold">TEST FONT</h1>
 
 <div class="h-96 w-96 bg-blue-500 mx-auto"></div>
-
+    <p class="max-w-5xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem laudantium numquam totam accusantium quas iure optio. Omnis laborum assumenda alias nostrum rerum a cum culpa enim beatae dignissimos. Explicabo sunt, dolor, nesciunt dolorum fuga repellat suscipit reprehenderit, aut obcaecati alias impedit modi maiores fugit? Dolorem explicabo quidem sed vero aliquid distinctio! Corporis nobis unde corrupti non optio repellat aliquam deleniti, fugiat quo, a tempore aut veniam id, voluptatem dolores qui amet accusamus ab soluta magni. Veniam consectetur accusantium, consequatur pariatur accusamus laboriosam illum culpa adipisci veritatis ut, quo unde laudantium! Deserunt, sint mollitia. Quisquam hic iure nisi officiis earum quas recusandae maiores placeat blanditiis? Quasi praesentium incidunt enim nam ad aperiam quidem dicta iste laborum. Distinctio sunt fugit mollitia, voluptatum impedit nostrum vitae repellendus deserunt facere repudiandae excepturi similique itaque voluptate minus delectus, optio fuga maiores! Animi ipsam temporibus, libero distinctio vitae facilis autem fugit ad repellat sed molestiae deserunt praesentium hic similique totam nobis deleniti quos eius quod natus laudantium delectus accusamus quibusdam cumque. Dolor quod dolorum, id repellendus tempora provident accusamus magni eaque itaque harum nemo, exercitationem autem perspiciatis consequuntur neque officiis ipsum excepturi reiciendis eius? Consequatur facere pariatur, nobis aliquid accusantium dicta iusto veritatis modi nulla voluptatum, animi recusandae nihil delectus rerum deleniti, obcaecati cupiditate. Modi assumenda, harum eos aliquam alias expedita incidunt consectetur consequatur porro dignissimos sint, ratione dolore nesciunt saepe voluptates iusto omnis sunt, aut nemo provident. Perspiciatis ab tenetur voluptates tempora earum veritatis, deleniti deserunt quisquam iusto doloribus a mollitia rem quibusdam magni quis voluptatibus porro consequuntur molestias amet at maiores rerum animi explicabo totam. Quod, enim ex error veritatis deserunt tempora eius adipisci itaque voluptates consequuntur quibusdam, dolorem omnis eligendi. Consequatur in, voluptatem iure accusamus eligendi laboriosam libero ullam eum. Fugit voluptatum eligendi consectetur consequatur unde cum quasi sed non architecto voluptate, officiis nam quod exercitationem excepturi repellendus, corrupti magni tempore atque nostrum? Fugiat est, autem nobis voluptatum numquam commodi odit consequuntur illum debitis non dolores voluptate provident voluptatem illo atque fuga assumenda ullam? Suscipit quasi rem error fugit vitae quisquam aliquam, voluptatibus incidunt excepturi nobis enim repudiandae nulla et modi illum temporibus animi officiis similique? Laborum aperiam aut sed nihil aliquam voluptates maxime ex voluptate vero architecto odit enim, neque repudiandae voluptatum provident. Commodi, recusandae expedita modi odit laudantium similique, doloribus cum laborum ipsam facilis aliquid nulla rem ab, eaque eius eos quos adipisci repellat sit. Aliquid eos nulla veniam sint quae quos maxime voluptatibus reprehenderit, maiores reiciendis molestiae. Quae dignissimos a libero, nihil illo ad id, quidem quibusdam pariatur fugit aut veniam et inventore est, autem dolore quam eaque distinctio reprehenderit? Numquam eaque nobis ut optio ipsam cumque debitis fuga deleniti officiis ipsa ex exercitationem quia tempora aliquid aspernatur dolores voluptatum, asperiores quos atque rem similique mollitia perspiciatis dolorem. Id fuga reprehenderit error sunt, consectetur voluptates maiores distinctio praesentium et nesciunt eum, dolorum quasi! Veritatis molestiae laudantium asperiores accusantium ea nihil, sapiente quaerat eaque optio modi adipisci aut recusandae itaque ipsa deleniti animi ratione. Atque harum, eaque aut debitis minima laborum!</p>
 </div>
 
   
