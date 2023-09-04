@@ -36,6 +36,8 @@ module.exports = {
         crimson600:`#60100b`,
         crimson700:`#710c04`,
         crimson800:`rgb(42 15 15)`,
+        crimson900:`#2a0f0f`,
+        crimson1000:`#1f0b0b`,
       },
     },
   },

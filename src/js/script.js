@@ -10,6 +10,21 @@ window.onscroll = function () {
     }
 };
 
+// DARK MODE TOGGLE
+const darkToggle = document.querySelector('#dark-toggle');
+const html = document.querySelector('html');
+
+darkToggle.addEventListener('click',function(){
+   
+    // a function to check the Dark
+    const isDarkMode = html.classList.contains('dark');
+    if (isDarkMode) {
+        html.classList.remove('dark');
+    } else {
+        html.classList.add('dark');
+    }
+});
+
 
 // BURGER TOGGLE MENU
 const burger = document.querySelector(`#burger`);
