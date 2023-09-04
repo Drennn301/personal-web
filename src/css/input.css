@@ -26,7 +26,7 @@
     /* Content Wrap */
     .content-wrap {
       @apply rounded-lg shadow-xl overflow-hidden
-      hover:scale-110 duration-150 bg-white;
+      bg-white;
     }
 
     .image-wrap {
@@ -54,7 +54,7 @@
       }
 
       .project-text {
-       @apply text-center text-xl pt-3 mb-4 text-slate-700 truncate;
+       @apply text-center text-xl p-3 mb-4 text-slate-700 truncate;
       }
     
 
