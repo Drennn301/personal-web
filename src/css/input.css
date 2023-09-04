@@ -25,33 +25,38 @@
 
     /* Content Wrap */
     .content-wrap {
-      @apply rounded-lg shadow-xl overflow-hidden 
+      @apply rounded-lg shadow-xl overflow-hidden
       hover:scale-110 duration-150 bg-white;
     }
 
-
-
-    /* Blog Utilities */
     .image-wrap {
      @apply w-[400px] h-[250px]
                 md:w-[300px] h-[190px] object-cover
                 lg:w-[400px] h-[260px] object-cover;
     }
+
+
     
-        /* Blog Text */
+        /* 🖌 🖌 Blog Utilities */
       .blog-title {
-        @apply font-ptSans font-bold text-2xl ;
+        @apply text-center font-ptSans font-bold text-2xl truncate;
       }
 
       .blog-text {
-        @apply text-xl pt-4 mb-5 text-slate-700 truncate;
+        @apply text-center px-4 pt-4 mb-5 text-slate-700 truncate;
       }
 
 
 
+    /* ⚒️ ⚒️ Project Utilities */
+      .project-title {
+        @apply text-center font-ptSans font-bold text-3xl truncate;
+      }
 
-
-
+      .project-text {
+       @apply text-center text-xl pt-3 mb-4 text-slate-700 truncate;
+      }
+    
 
 
     /* Burger Toggle */
