@@ -40,6 +40,20 @@
 
     
         /* 🖌 🖌 Blog Utilities */
+
+      .blog-container {
+        @apply container mx-auto pt-28 sm:pt-64 px-4;
+      }
+
+      .blog-content-title {
+        @apply text-center text-4xl sm:text-[70px] font-outfit font-semibold;
+      }
+
+      .blog-content-image {
+        @apply mx-auto w-52 h-52 sm:mt-20 sm:w-[500px] sm:h-[500px]  mt-10 rounded-xl;
+      }
+
+
       .blog-title {
         @apply text-center font-ptSans font-bold text-2xl truncate
         dark:text-white ;
@@ -49,6 +63,7 @@
         @apply text-center px-4 pt-4 mb-5 text-slate-700 truncate
         dark:text-white;
       }
+
 
 
 
